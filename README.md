@@ -63,6 +63,7 @@ realestate_project/
 
 ## 📸 Screenshots
 <img width="1307" height="586" alt="Screenshot 2025-07-22 040436" src="https://github.com/user-attachments/assets/fb44b586-4c02-4378-8539-01535d731880" />
+<img width="1172" height="588" alt="Screenshot 2025-07-22 041926" src="https://github.com/user-attachments/assets/b587cff3-fc00-4f81-88e8-d56b4b4a6162" />
 <img width="1041" height="508" alt="Screenshot 2025-07-22 040533" src="https://github.com/user-attachments/assets/58cccab4-9283-406d-8ea2-ffce29fb85d9" />
 <img width="1329" height="614" alt="Screenshot 2025-07-22 041005" src="https://github.com/user-attachments/assets/567a3093-89e7-402b-96d0-fcf779ee4fbe" />
 
