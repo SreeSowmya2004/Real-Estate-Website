@@ -61,13 +61,9 @@ realestate_project/
 - 🔐 Secure Password Storage (hashing recommended)
 - 💻 Responsive Design for all devices
 
----
-
 ## 📸 Screenshots
 
 > *(Add screenshots of key pages like property listing, dashboard, search page here)*
-
----
 
 ## 🙋‍♀️ Author
 
