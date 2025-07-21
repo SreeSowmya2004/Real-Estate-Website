@@ -1,6 +1,6 @@
 # 🏡 Real Estate Website
 
-A dynamic web platform for property listings, search, and user interaction. It is a real estate listing platform built with HTML, CSS, JavaScript, Node.js, and MySQL. This project allows users to register, post properties, search listings, and manage saved properties. Designed for responsiveness and ease of use.
+A Dynamic web platform for property listings, search, and user interaction. It is a real estate listing platform built with HTML, CSS, JavaScript, Node.js, and MySQL. This project allows users to register, post properties, search listings, and manage saved properties. Designed for responsiveness and ease of use.
 
 ## 🔧 Tech Stack
 - HTML, CSS, JavaScript
