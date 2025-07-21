@@ -67,7 +67,7 @@ realestate_project/
 <img width="1041" height="508" alt="Screenshot 2025-07-22 040533" src="https://github.com/user-attachments/assets/58cccab4-9283-406d-8ea2-ffce29fb85d9" />
 <img width="1329" height="614" alt="Screenshot 2025-07-22 041005" src="https://github.com/user-attachments/assets/567a3093-89e7-402b-96d0-fcf779ee4fbe" />
 
-## 🙋‍♀️ Author
+## 🙋‍♀️ Let's Connect
 
 **C. Sree Sowmya**  
 📧 sreesowmya2k4@gmail.com  
