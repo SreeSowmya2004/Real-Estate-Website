@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Saved Properties</title>
+
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <style>
+      .saved h2 {
+         font-size: 2rem;
+         margin-bottom: 2rem;
+      }
+
+      .saved .box {
+         border: 1px solid #ccc;
+         border-radius: 0.5rem;
+         padding: 1.5rem;
+         margin: 1rem auto;
+         max-width: 600px;
+         font-size: 1.2rem;
+         background-color: #f9f9f9;
+      }
+
+      .saved .box h3 {
+         font-size: 1.5rem;
+         margin-bottom: 0.5rem;
+      }
+
+      .saved .box p {
+         margin: 0.5rem 0;
+      }
+
+      .saved .box button {
+         margin-top: 1rem;
+         padding: 0.5rem 1rem;
+         font-size: 1rem;
+         border: none;
+         background-color: #e74c3c;
+         color: #fff;
+         border-radius: 5px;
+         cursor: pointer;
+      }
+
+      .saved .box button:hover {
+         background-color: #c0392b;
+      }
+
+      .empty-message {
+         text-align: center;
+         margin-top: 2rem;
+         font-size: 1.2rem;
+      }
+   </style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+   <nav class="navbar nav-1">
+      <section class="flex">
+         <a href="home.html" class="logo"><i class="fas fa-house"></i>MyHome</a>
+      </section>
+   </nav>
+
+   <nav class="navbar nav-2">
+      <section class="flex">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div class="menu">
+            <ul>
+               <li><a href="home.html">home</a></li>
+               <li><a href="saved.html">saved</a></li>
+               <li><a href="post_property.html">post property</a></li>
+            </ul>
+         </div>
+      </section>
+   </nav>
+</header>
+
+<!-- Saved Properties Section -->
+<section class="saved" style="padding: 2rem;">
+   <div class="container" id="saved-container">
+      <h2 class="heading" style="text-align: center;">Saved Properties</h2>
+      <!-- Saved properties will appear here -->
+   </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+   <section class="flex">
+      <div class="box">
+         <a href="tel:1234567890"><i class="fas fa-phone"></i><span>1234567890</span></a>
+         <a href="mailto:myhome@gmail.com"><i class="fas fa-envelope"></i><span>myhome@gmail.com</span></a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i><span>India</span></a>
+      </div>
+      <div class="box">
+         <a href="home.html"><span>home</span></a>
+         <a href="saved.html"><span>saved</span></a>
+         <a href="contact.html"><span>contact</span></a>
+      </div>
+   </section>
+   <div class="credit">&copy; 2025 by <span>MyHome</span> | All rights reserved!</div>
+</footer>
+
+<!-- JavaScript to Load & Manage Saved Properties -->
+<script>
+   function renderSavedProperties() {
+      const saved = JSON.parse(localStorage.getItem('savedProperties')) || [];
+      const container = document.getElementById('saved-container');
+
+      container.innerHTML = '<h2 class="heading" style="text-align: center;">Saved Properties</h2>';
+
+      if (saved.length === 0) {
+         container.innerHTML += '<div class="empty-message">You have not saved any properties yet.</div>';
+         return;
+      }
+
+      saved.forEach((property, index) => {
+         const div = document.createElement('div');
+         div.className = 'box';
+         div.innerHTML = `
+            <h3>${property.title}</h3>
+            <p><strong>Location:</strong> ${property.location}</p>
+            <p><strong>Price:</strong> ₹${property.price}</p>
+            <button onclick="deleteProperty(${index})">Delete</button>
+         `;
+         container.appendChild(div);
+      });
+   }
+
+   function deleteProperty(index) {
+      let saved = JSON.parse(localStorage.getItem('savedProperties')) || [];
+      saved.splice(index, 1);
+      localStorage.setItem('savedProperties', JSON.stringify(saved));
+      renderSavedProperties();
+   }
+
+   document.addEventListener('DOMContentLoaded', renderSavedProperties);
+</script>
+
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
