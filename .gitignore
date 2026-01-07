@@ -1,0 +1,51 @@
+# Node
+node_modules/
+npm-debug.log*
+# Yarn
+yarn-error.log*
+# pnpm
+.pnpm-store/
+
+# Logs
+logs/
+*.log
+
+# Runtime files
+pids/
+*.pid
+*.seed
+
+# Build / output
+dist/
+build/
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# PHP / Composer
+vendor/
+# If you use composer.lock and want to track it, remove the next line
+# composer.lock
+
+# Misc
+npm-debug.log*
+.env
+
+# Ignore temporary uploads / caches (uncomment if used)
+# uploads/
+# tmp/
