@@ -8,6 +8,11 @@ body{font-family:'Poppins',sans-serif;background:#f7f9fb;color:#222;line-height:
 .navbar{display:flex;justify-content:space-between;align-items:center;padding:0.9rem 2rem}
 .logo{font-weight:700;color:#1f2937;text-decoration:none;font-size:1.1rem;display:inline-flex;align-items:center;gap:0.5rem}
 .navbar .menu ul{list-style:none;display:flex;gap:1rem}
+/* ensure top-level nav lists are horizontal and bullet-free */
+.navbar ul{list-style:none;display:flex;gap:1rem;align-items:center}
+.navbar ul li{list-style:none}
+.navbar ul a{color:#374151;text-decoration:none;padding:0.25rem 0.5rem;border-radius:6px}
+.navbar ul a:hover{background:#eef2ff}
 .navbar .menu a{color:#374151;text-decoration:none;padding:0.25rem 0.5rem;border-radius:4px}
 .navbar .menu a:hover{background:#eef2ff}
 #menu-btn{display:none;cursor:pointer}

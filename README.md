@@ -30,7 +30,7 @@ realestate_project/
 │   ├── about.html
 │   ├── contact.html
 │   ├── dashboard.html
-│   ├── home.html
+│   ├── index.html
 │   ├── listings.html
 │   ├── login.html
 │   ├── post_property.html
