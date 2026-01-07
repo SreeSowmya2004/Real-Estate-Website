@@ -4,6 +4,12 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%}
 body{font-family:'Poppins',sans-serif;background:#f7f9fb;color:#222;line-height:1.45}
+
+/* utility classes used across pages */
+.flex{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+
+/* ensure unordered lists don't show bullets and have no default spacing */
+.header ul, .navbar ul{list-style:none;margin:0;padding:0}
 .header{background:#fff;box-shadow:0 1px 8px rgba(15,15,15,0.05);position:sticky;top:0;z-index:100}
 .navbar{display:flex;justify-content:space-between;align-items:center;padding:0.9rem 2rem}
 .logo{font-weight:700;color:#1f2937;text-decoration:none;font-size:1.1rem;display:inline-flex;align-items:center;gap:0.5rem}
